@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-arrangement',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./arrangement.component.css']
 })
 export class ArrangementComponent implements OnInit {
+
+  @Input() name: string = "";
+  @Input() continent: string = "";
+  @Input() flag: string = "";
+  @Input() description: string = "";
+  @Input() price: number = 0;
 
   constructor() { }
 
