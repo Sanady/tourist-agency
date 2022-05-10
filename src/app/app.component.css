@@ -1,0 +1,29 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+
+mat-toolbar a {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+}
+
+mat-icon {
+    vertical-align: text-bottom;
+}
+
+mat-sidenav {
+    width: 200px;
+}
+
+mat-icon {
+    padding-right: 10px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #dbdbdb;
+}
