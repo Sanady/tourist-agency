@@ -12,10 +12,14 @@ export class ArrangementComponent implements OnInit {
   @Input() flag: string = "";
   @Input() description: string = "";
   @Input() price: number = 0;
+  @Input() discount: number = 0;
+  @Input() from: Date = new Date();
+  @Input() to: Date = new Date();
+  @Input() duration: number = 0;
+  @Input() picture: string = "";
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

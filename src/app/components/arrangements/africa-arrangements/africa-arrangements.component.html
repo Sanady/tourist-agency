@@ -5,7 +5,10 @@
                     [continent]="cell.continent" 
                     [flag]="cell.flag"
                     [description]="cell.description"
-                    [price]="cell.price"></app-arrangement>
+                    [price]="cell.price"
+                    [duration]="arrangementsComponent.getDifferenceInDays(cell.from, cell.to)"
+                    [discount]="cell.discount"
+                    [picture]="cell.picture"></app-arrangement>
     </div>
   </div>
 </section>

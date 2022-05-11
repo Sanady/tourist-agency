@@ -12,4 +12,8 @@ export class ArrangementsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getDifferenceInDays(date1: Date, date2: Date): number {
+    let timeInMilisec: number = date2.getTime() - date1.getTime();
+    return Math.ceil(timeInMilisec / (1000 * 60 * 60 * 24));
+  }
 }

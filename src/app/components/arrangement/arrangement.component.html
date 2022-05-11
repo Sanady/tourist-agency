@@ -1,12 +1,28 @@
 <mat-card class="example-card">
+    <img mat-card-image src="{{ picture }}" alt="">
     <mat-card-title>{{ name }} <span class="flag-icon flag-icon-{{ flag }} flag-icon-rounded"></span></mat-card-title>
     <mat-card-subtitle>{{ continent }}</mat-card-subtitle>
     <mat-card-content>
-      <p>{{ description }}</p>
-      <span class="badge bg-success">{{ price }}</span>
+      <div fxLayout="row" 
+      fxLayoutAlign="center" 
+      fxLayoutGap="10px"
+      *ngIf="discount == 0; else discount_price">
+        <h5><span class="badge bg-success">{{ price }} €</span></h5>
+        <h5><span class="badge bg-secondary">{{ duration }} days</span></h5>
+      </div>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button>REVIEW OFFER</button>
     </mat-card-actions>
 </mat-card>
+<ng-template #discount_price>
+  <div fxLayout="row"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="center" 
+      fxLayoutGap="10px"
+      fxLayoutGap.lt-lg="0px">
+      <h5><span class="badge bg-success"><s>{{ price }} €</s></span></h5>
+      <h5><span class="badge bg-danger">{{ discount }} €</span></h5>
+      <h5><span class="badge bg-secondary">{{ duration }} days</span></h5>
+  </div>
+</ng-template>

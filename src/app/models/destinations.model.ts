@@ -4,4 +4,9 @@ export interface Destination {
     flag: string;
     description: string;
     price: number;
+    discount: number;
+    from: Date;
+    to: Date;
+    duration: number;
+    picture: string;
 }
