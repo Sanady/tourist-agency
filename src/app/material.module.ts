@@ -14,11 +14,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
 
 @NgModule({
     imports: [
-        MatButtonModule, 
-        MatIconModule, 
+        MatButtonModule,
+        MatIconModule,
         MatFormFieldModule,
         MatInputModule,
         MatDatepickerModule,
@@ -30,11 +31,12 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
         MatTabsModule,
         MatCardModule,
         MatSelectModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatAutocompleteModule
     ],
     exports: [
-        MatButtonModule, 
-        MatIconModule, 
+        MatButtonModule,
+        MatIconModule,
         MatFormFieldModule,
         MatInputModule,
         MatDatepickerModule,
@@ -46,7 +48,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
         MatTabsModule,
         MatCardModule,
         MatSelectModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatAutocompleteModule
     ]
 })
 

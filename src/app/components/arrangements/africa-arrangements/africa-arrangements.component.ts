@@ -17,48 +17,48 @@ export class AfricaArrangementsComponent implements OnInit {
           continent: "Africa",
           flag: "eg",
           description: "Long beach test",
-          price: 5000.0,
+          price: 650.0,
           discount: 0,
           from: new Date("2022-04-01"),
           to: new Date("2022-04-12"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/egypt.jpg"
         },
         {
           name: "Morocco",
           continent: "Africa",
           flag: "ma",
           description: "Test desc",
-          price: 6000.0,
-          discount: 2000.0,
+          price: 950.0,
+          discount: 500.0,
           from: new Date("2022-05-01"),
           to: new Date("2022-05-10"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/morocco.jpg"
         },
         {
           name: "Hurghada",
           continent: "Africa",
           flag: "eg",
           description: "Long beach test",
-          price: 5000.0,
+          price: 500.0,
           discount: 0,
           from: new Date("2022-06-01"),
           to: new Date("2022-06-11"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/egypt2.jpg"
         },
         {
           name: "Hurghada",
           continent: "Africa",
           flag: "eg",
           description: "Long beach test",
-          price: 5000.0,
+          price: 500.0,
           discount: 0,
           from: new Date("2022-07-01"),
           to: new Date("2022-07-08"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/egypt3.jpg"
         }
       ],
       [
@@ -67,48 +67,48 @@ export class AfricaArrangementsComponent implements OnInit {
           continent: "Africa",
           flag: "ma",
           description: "Test desc",
-          price: 6000.0,
+          price: 600.0,
           discount: 0,
           from: new Date("2022-08-01"),
           to: new Date("2022-08-12"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/morocco.jpg"
         },
         {
           name: "Morocco",
           continent: "Africa",
           flag: "ma",
           description: "Test desc",
-          price: 6000.0,
+          price: 600.0,
           discount: 0,
           from: new Date("2022-09-01"),
           to: new Date("2022-09-12"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/morocco.jpg"
         },
         {
           name: "Morocco",
           continent: "Africa",
           flag: "ma",
           description: "Test desc",
-          price: 6000.0,
+          price: 600.0,
           discount: 0,
           from: new Date("2022-10-01"),
           to: new Date("2022-10-12"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/morocco.jpg"
         },
         {
           name: "Morocco",
           continent: "Africa",
           flag: "ma",
           description: "Test desc",
-          price: 6000.0,
+          price: 600.0,
           discount: 0,
           from: new Date("2022-11-01"),
           to: new Date("2022-11-12"),
           duration: 0,
-          picture: "assets/egypt.jpg"
+          picture: "assets/images/morocco.jpg"
         },
       ]
   ];

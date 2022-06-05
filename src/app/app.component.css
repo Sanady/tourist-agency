@@ -27,3 +27,57 @@ a {
 a:hover, a:active {
     color: #dbdbdb;
 }
+
+.search-form {
+  margin-top: 15px;
+  margin-left: 20px;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.search-full-width {
+  width: 300px;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: white!important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white!important;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: white!important;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+  color: white!important;
+  opacity: 0.8!important;
+}
+
+::ng-deep .mat-input-element {
+  caret-color: white!important;
+}
+
+::ng-deep .mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
+  caret-color: white!important;
+}
+
+::ng-deep .mat-form-field-label {
+  color: rgba(0,0,0,.6)!important;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: white!important;
+}
+
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: white!important;
+}
+
+mat-label {
+  color: white;
+}

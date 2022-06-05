@@ -1,5 +1,40 @@
-<section>
-    <div>
-        
+<section fxLayout="column" fxLayoutAlign="center">
+    <div class="container">
+        <div class="header" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+          <h3>Sign up</h3>
+        </div>
+        <mat-divider></mat-divider>
+        <form class="body" fxLayout="column "fxLayoutAlign="center center" fxLayoutGap="15px">
+          <div>
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your email</mat-label>
+              <input matInput placeholder="pat@example.com" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your password</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password">
+              <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="fill">
+              <mat-label>Repeat your password</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'" [formControl]="repeatPassword">
+              <mat-error *ngIf="repeatPassword.invalid">{{getRepeatPasswordErrorMessage()}}</mat-error>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+          <div>
+            <button class="btn btn-success submit-button" type="button">Sign up</button>
+          </div>
+        </form>
     </div>
 </section>

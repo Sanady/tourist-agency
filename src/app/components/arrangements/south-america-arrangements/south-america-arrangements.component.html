@@ -1,15 +1,15 @@
 <section class="container" fxLayout="column" fxLayoutGap="20px">
-    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20px">
-      <app-arrangement></app-arrangement>
-      <app-arrangement></app-arrangement>
-      <app-arrangement></app-arrangement>
-      <app-arrangement></app-arrangement>
+  <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="20px"*ngFor="let column of southAmericaDestinations;">
+    <div *ngFor="let cell of column;">
+      <app-arrangement [name]="cell.name"
+                    [continent]="cell.continent" 
+                    [flag]="cell.flag"
+                    [description]="cell.description"
+                    [price]="cell.price"
+                    [duration]="arrangementsComponent.getDifferenceInDays(cell.from, cell.to)"
+                    [discount]="cell.discount"
+                    [picture]="cell.picture"></app-arrangement>
     </div>
-    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20px">
-      <app-arrangement></app-arrangement>
-      <app-arrangement></app-arrangement>
-      <app-arrangement></app-arrangement>
-      <app-arrangement></app-arrangement>
-    </div>
-  </section>
+  </div>
+</section>
   
