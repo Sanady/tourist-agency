@@ -4,7 +4,12 @@
           <h3>Sign up</h3>
         </div>
         <mat-divider></mat-divider>
-        <form class="body" fxLayout="column "fxLayoutAlign="center center" fxLayoutGap="15px">
+        <form class="body"
+          #f="ngForm"
+          (ngSubmit)="onSubmit(f)" 
+          fxLayout="column"
+          fxLayoutAlign="center center" 
+          fxLayoutGap="15px">
           <div>
             <mat-form-field appearance="fill">
               <mat-label>Enter your email</mat-label>
@@ -33,7 +38,7 @@
             </mat-form-field>
           </div>
           <div>
-            <button class="btn btn-success submit-button" type="button">Sign up</button>
+            <button class="btn btn-success submit-button" type="submit">Sign up</button>
           </div>
         </form>
     </div>
