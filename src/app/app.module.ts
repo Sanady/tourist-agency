@@ -16,6 +16,7 @@ import { SouthAmericaArrangementsComponent } from './components/arrangements/sou
 import { NorthAmericaArrangementsComponent } from './components/arrangements/north-america-arrangements/north-america-arrangements.component';
 import { AfricaArrangementsComponent } from './components/arrangements/africa-arrangements/africa-arrangements.component';
 import { ArrangementComponent } from './components/arrangement/arrangement.component';
+import { DestinationComponent } from './components/destination/destination.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ArrangementComponent } from './components/arrangement/arrangement.compo
     SouthAmericaArrangementsComponent,
     NorthAmericaArrangementsComponent,
     AfricaArrangementsComponent,
-    ArrangementComponent
+    ArrangementComponent,
+    DestinationComponent
   ],
   imports: [
     BrowserModule,
