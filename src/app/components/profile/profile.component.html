@@ -3,8 +3,8 @@
         <mat-card-subtitle>{{username}}</mat-card-subtitle>
         <mat-card-title>Profile update</mat-card-title>
         <mat-card-content>
-          <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
-            <div fxLayout="row" fxLayoutGap="20px">
+          <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px" fxLayout.lt-md="column">
+            <div fxLayout="row" fxLayoutGap="20px" fxLayout.lt-md="column">
                 <mat-form-field appearance="fill">
                     <mat-label>Enter your firstname</mat-label>
                     <input matInput placeholder="Peter" required [formControl]="firstname">
@@ -21,7 +21,7 @@
                     <mat-error *ngIf="phoneNumber.invalid">{{ getPhoneNumberErrorMessage() }}</mat-error>
                 </mat-form-field>
             </div>
-            <div fxLayout="row" fxLayoutGap="20px" class="example-full-width">
+            <div fxLayout="row" fxLayoutGap="20px" class="example-full-width" fxLayout.lt-md="column">
                 <mat-form-field appearance="fill" class="example-full-width">
                     <mat-label>Enter your new password</mat-label>
                     <input matInput placeholder="test3214" required [formControl]="password">
