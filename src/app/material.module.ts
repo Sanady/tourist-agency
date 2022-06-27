@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
     imports: [
@@ -32,7 +33,8 @@ import { MatAutocompleteModule } from "@angular/material/autocomplete";
         MatCardModule,
         MatSelectModule,
         MatProgressSpinnerModule,
-        MatAutocompleteModule
+        MatAutocompleteModule,
+        MatStepperModule
     ],
     exports: [
         MatButtonModule,
@@ -49,7 +51,8 @@ import { MatAutocompleteModule } from "@angular/material/autocomplete";
         MatCardModule,
         MatSelectModule,
         MatProgressSpinnerModule,
-        MatAutocompleteModule
+        MatAutocompleteModule,
+        MatStepperModule
     ]
 })
 

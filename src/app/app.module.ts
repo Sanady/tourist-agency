@@ -17,6 +17,8 @@ import { NorthAmericaArrangementsComponent } from './components/arrangements/nor
 import { AfricaArrangementsComponent } from './components/arrangements/africa-arrangements/africa-arrangements.component';
 import { ArrangementComponent } from './components/arrangement/arrangement.component';
 import { DestinationComponent } from './components/destination/destination.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DestinationComponent } from './components/destination/destination.compo
     NorthAmericaArrangementsComponent,
     AfricaArrangementsComponent,
     ArrangementComponent,
-    DestinationComponent
+    DestinationComponent,
+    ProfileComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

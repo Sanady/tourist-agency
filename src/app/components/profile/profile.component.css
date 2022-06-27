@@ -1,0 +1,14 @@
+.container {
+    width: 800px;
+    margin-top: 30px;
+}
+
+.header-text {
+    font-weight: bold;
+}
+
+.example-full-width {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+}
